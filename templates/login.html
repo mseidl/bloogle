@@ -1,0 +1,28 @@
+{% include 'header.html' %}
+
+	<h1>Login to bloggoworld:</h1>
+	<br>
+	<hr>
+	<br>
+	<br>
+	<form method="post">
+	<label>Username:
+	<input type="text" name="user">
+	</label>
+	<br>
+	<label>Password:
+	<input type="password" name="password">
+	</label>
+	<br>
+	<input type="submit" value="Login">
+	</form>
+	<hr>
+	{% if error %}
+	<b>There was an error with your information</b><br>
+	{% endif %}
+	<br>
+	Not a user?  Click <a href="/signup">here</a> to signup
+
+{% include 'footer.html' %}
+
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<title>
+		Bloggoland	
+	</title>
+</head>
+<html>
+<body>
+	<!-- menu -->
+	<div align="right">
+	{% if login %}
+	welcome || <a href="/newpost">new post</a> || <a href="/logout">logout</a> ||
+	{% else %}
+	welcome guest || <a href="/signup">signup</a> || <a href="/login">login</a> ||
+	{% endif %}
+	<a href="/">home</a>
+</div>
+
+
+

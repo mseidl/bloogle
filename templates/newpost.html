@@ -1,0 +1,20 @@
+{% include 'header.html' %}
+
+    <h1>::post a blog entry::</h1>
+	<hr>
+	<form method="post">
+		<label>
+			<b>give a title:</b>
+			<input type="text" name="subject">
+		</label>
+		<br>
+		<label>
+			<b>enter content:</b>
+			<textarea cols="20" rows="10" type="text" name="content">
+			</textarea>
+			</label>
+			<input type="submit">
+		</form>
+		<div>{{error}}</div>
+
+{% include 'footer.html' %}

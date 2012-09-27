@@ -1,0 +1,16 @@
+{% include 'header.html' %}
+
+	<h1>::latest stories::</h1>
+	{% if name %}
+	<br>
+	Welcome {{name}}
+	{% endif %}
+	<hr>
+	{% for c in con %}
+	<a href="/post/{{c.key().id()}}"><b>{{c.subject}}</b></a>
+	<blockquote>
+	<pre>{{c.content}}</pre>
+	</blockquote>
+	{% endfor %}
+
+{% include 'footer.html' %}
