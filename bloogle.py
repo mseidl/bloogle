@@ -1,3 +1,18 @@
+#This file is part of bloogle.
+#
+#Foobar is free software: you can redistribute it and/or modify
+#it under the terms of the Affero GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#bloogle is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU Affero General Public License for more details.
+#
+#You should have received a copy of the Affero GNU General Public License
+#along with bloogle.  If not, see <http://www.gnu.org/licenses/>.
+
 import os
 import webapp2
 import jinja2
@@ -70,7 +85,8 @@ class Users(db.Model):
 
     @classmethod
     def by_id(cls, user_id):
-    '''decorator to use method without object instance, return user by the user id'''
+        '''decorator to use method without object instance,
+           return user by the user id'''
         return Users.get_by_id(user_id)
 
     @classmethod
